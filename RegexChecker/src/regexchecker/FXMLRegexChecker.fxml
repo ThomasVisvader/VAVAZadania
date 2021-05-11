@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="regexchecker.ControllerRegexChecker">
+   <children>
+      <Label layoutX="301.0" layoutY="167.0" text="Regex Checker">
+         <font>
+            <Font name="Segoe UI" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="157.0" layoutY="239.0" text="Enter regex:">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="regexField" layoutX="275.0" layoutY="232.0" onMouseClicked="#clear">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="textField" layoutX="275.0" layoutY="297.0" onMouseClicked="#clear" prefHeight="229.0" prefWidth="249.0">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="173.0" layoutY="388.0" text="Enter text:">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="checkButton" layoutX="358.0" layoutY="612.0" mnemonicParsing="false" onMouseClicked="#check" text="Check">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="resultLabel" contentDisplay="CENTER" layoutX="367.0" layoutY="669.0" text="OK/NG">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="specialCharsCheckbox" layoutX="323.0" layoutY="543.0" mnemonicParsing="false" text="Ignore special characters" />
+      <CheckBox fx:id="caseCheckBox" layoutX="323.0" layoutY="577.0" mnemonicParsing="false" text="Case insensitive" />
+      <Button layoutX="333.0" layoutY="717.0" mnemonicParsing="false" onMouseClicked="#cheatSheet" text="Cheat Sheet">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

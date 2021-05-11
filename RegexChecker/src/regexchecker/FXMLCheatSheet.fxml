@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="regexchecker.ControllerCheatSheet">
+   <children>
+      <TextArea editable="false" layoutX="2.0" prefHeight="700.0" prefWidth="800.0" text="[abc]&#9;                        simple, matches a or b, or c&#10;[\^abc]&#9;                negation, matches everything except a, b, or c&#10;[a-c]&#9;                        range, matches a or b, or c&#10;[a-c[f-h]]&#9;                union, matches a, b, c, f, g, h&#10;[a-c&amp;&amp;[b-c]]&#9;        intersection, matches b or c&#10;[a-c&amp;&amp;[\^b-c]]&#9;subtraction, matches only a&#10;&#10;.&#9;                        Any character&#10;\d&#9;                        A digit: [0-9]&#10;\D&#9;                        A non-digit: [\^0-9]&#10;\s&#9;                        A whitespace character: [ \t\n\x0B\f\r]&#10;\S&#9;                        A non-whitespace character: [\^\s]&#10;\w&#9;                        A word character: [a-zA-Z_0-9]&#10;\W&#9;                        A non-word character: [\^\w]&#10;&#10;^&#9;                        The beginning of a line&#10;$&#9;                        The end of a line&#10;\b&#9;                        A word boundary&#10;\B&#9;                        A non-word boundary&#10;\A&#9;                        The beginning of the input&#10;\G&#9;                        The end of the previous match&#10;\Z&#9;                        The end of the input but for the final terminator, if any&#10;\z&#9;                        The end of the input&#10;&#10;*&#9;                        Matches zero or more occurrences.&#10;+&#9;                        Matches one or more occurrences.&#10;?&#9;                        Matches zero or one occurrence." wrapText="true">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="367.0" layoutY="723.0" mnemonicParsing="false" onMouseClicked="#back" text="Back">
+         <font>
+            <Font name="Segoe UI" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

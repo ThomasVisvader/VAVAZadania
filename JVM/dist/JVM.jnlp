@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JVM.jnlp">
+  <information>
+    <title>JVM</title>
+    <vendor>Tommy</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JVM.jar" size="3401" download="eager" />
+    <jar href="lib\commons-io-2.8.0.jar" size="285424" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="view.Main"  name="JVM" />
+  <update check="always"/>
+</jnlp>
